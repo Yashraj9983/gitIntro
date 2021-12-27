@@ -11,8 +11,9 @@ public class Driver {
     static Logger logger = LoggerFactory.getLogger(Driver.class);
 
     public static void main(String[] args) throws Exception {
-        configureLogging(Driver.getArgument(args, "log.file.path"),
-                Driver.getArgument(args, "log.level"));
+//        configureLogging(Driver.getArgument(args, "log.file.path"),
+//                Driver.getArgument(args, "log.level"));
+        configureLogging("var/log/gitIgnore/","INFO");
         logger.info("Hello..");
 
     }
